@@ -1508,21 +1508,39 @@ def render_bai12():
     # ---------- TAB 2: Phân bổ = M3 ----------
     with tab2:
         st.subheader("Module M3 — Tối ưu phân bổ ngân sách ngành-vùng")
-        res = solve_bai4(True, 0.70)
-        if res.success:
-            X = res.x[:24].reshape(6, 4)
+
+        # λ=0.70 vô nghiệm (bẫy sư phạm trong Bài 4). M3 tự tìm λ khả thi cao nhất.
+        best_lam, res_m3 = 0.0, None
+        for lam_try in np.arange(0.68, -0.01, -0.01):
+            r_try = solve_bai4(True, round(lam_try, 2))
+            if r_try.success:
+                best_lam, res_m3 = round(lam_try, 2), r_try
+                break
+        if res_m3 is None:
+            res_m3 = solve_bai4(False)   # fallback: bỏ ràng buộc công bằng
+
+        st.info(
+            f"⚠️ Ràng buộc công bằng λ=0.70 vô nghiệm (xem phân tích Bài 4). "
+            f"Module M3 sử dụng **λ={best_lam:.2f}** — ngưỡng khả thi cao nhất tìm được."
+            if best_lam > 0 else
+            "⚠️ Không tìm được λ khả thi — hiển thị phân bổ không có ràng buộc công bằng."
+        )
+
+        if res_m3.success:
+            X = res_m3.x[:24].reshape(6, 4)
             c1, c2 = st.columns([1, 1.2])
             with c1:
-                card("Z* GDP gain", f"{-res.fun:,.0f}", "tỷ VND", "#2e7d32")
+                card("Z* GDP gain", f"{-res_m3.fun:,.0f}", "tỷ VND", "#2e7d32")
                 st.dataframe(pd.DataFrame(X, columns=["I", "D", "AI", "H"],
                              index=REGION_SHORT).style.format("{:,.0f}"), use_container_width=True)
             with c2:
                 fig = px.imshow(X, x=["I", "D", "AI", "H"], y=REGION_SHORT, text_auto=".0f",
                                 color_continuous_scale="Reds", aspect="auto")
-                fig.update_layout(height=360, template="plotly_white", title="Heatmap phân bổ tối ưu (M3)")
+                fig.update_layout(height=360, template="plotly_white",
+                                  title=f"Heatmap phân bổ tối ưu — M3 (λ={best_lam:.2f})")
                 st.plotly_chart(fig, use_container_width=True)
         else:
-            st.warning("Cấu hình công bằng vùng hiện vô nghiệm — xem Bài 4.")
+            st.error("Không giải được bài toán phân bổ M3.")
 
     # ---------- TAB 3: So sánh 5 kịch bản = M4 + KPI ----------
     with tab3:
