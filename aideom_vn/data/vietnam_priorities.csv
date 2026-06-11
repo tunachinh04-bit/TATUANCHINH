@@ -1,0 +1,4 @@
+weight_id,a1_growth,a2_productivity,a3_spillover,a4_export,a5_employment,a6_ai_readiness,a7_risk,label
+default,0.15,0.15,0.20,0.15,0.10,0.20,0.15,Default
+growth,0.25,0.20,0.15,0.20,0.05,0.10,0.05,Growth-Oriented
+inclusive,0.10,0.10,0.25,0.05,0.25,0.10,0.15,Inclusive
