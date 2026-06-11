@@ -198,8 +198,8 @@ st.sidebar.markdown(
     "<div class='nm'>Tạ Tuấn Chinh</div>"
     "<div class='row'>Mã sinh viên: <b>23051191</b></div>"
     "<div class='row' style='margin-top:6px'>📦 GitHub:</div>"
-    "<div class='row'><a href='https://github.com/anoreo07/AIDEOMVN' "
-    "style='color:#f4b400 !important'>anoreo07/AIDEOMVN</a></div>"
+    "<div class='row'><a href='https://github.com/tunachinh04-bit/TATUANCHINH' "
+    "style='color:#f4b400 !important'>tunachinh04-bit/TATUANCHINH</a></div>"
     "</div>", unsafe_allow_html=True)
 st.sidebar.caption("Dữ liệu Việt Nam 2020-2025 · GSO · WB · MoST · MIC · MPI · GII")
 
