@@ -105,6 +105,21 @@ def policy_box(md):
     st.markdown(f"<div class='policy'>{md}</div>", unsafe_allow_html=True)
 
 
+# ---- Q&A thảo luận chính sách (trích từ notebooks aideom_vn) ----
+POLICY_QA = {1: [('TFP giai đoạn 2020–2025 có ý nghĩa gì với mục tiêu phát triển bền vững của Việt Nam?', 'Xu hướng TFP của Việt Nam giai đoạn 2020-2025 cho thấy sự chuyển dịch quan trọng từ tăng trưởng dựa trên thâm dụng vốn và lao động giá rẻ sang tăng trưởng dựa trên năng suất và đổi mới sáng tạo. Mặc dù chịu ảnh hưởng nặng nề bởi đại dịch COVID-19 trong các năm 2020-2021, TFP vẫn duy trì đà phục hồi mạnh mẽ vào các năm 2022-2025, phản ánh hiệu quả từ các hoạt động số hóa doanh nghiệp. Điều này hoàn toàn phù hợp với định hướng phát triển bền vững của quốc gia, giúp cải thiện chất lượng tăng trưởng thay vì quy mô đơn thuần. Duy trì đà tăng trưởng TFP cao là chìa khóa để Việt Nam tránh bẫy thu nhập trung bình và đạt được các mục tiêu thịnh vượng lâu dài.'), ('Chuyển đổi số (D) và doanh nghiệp công nghệ số (AI) cải thiện TFP thế nào theo QĐ 749/QĐ-TTg?', 'Theo Quyết định 749/QĐ-TTg về Chương trình Chuyển đổi số quốc gia, kinh tế số được xác định là động lực chính để thúc đẩy TFP vượt ngưỡng 35-40% đóng góp vào tăng trưởng GDP. Việc tăng tỷ lệ số hóa (D) và số lượng doanh nghiệp AI giúp tối ưu hóa quy trình sản xuất, cắt giảm chi phí vận hành và tăng cường liên kết chuỗi giá trị. Công nghệ số hoạt động như một chất xúc tác làm tăng hiệu suất của cả vốn vật chất và vốn nhân lực, giúp tạo ra các mô hình kinh doanh mới có giá trị gia tăng cực kỳ cao. Do đó, việc chuyển đổi số sâu rộng chính là con đường ngắn nhất để nâng cao năng lực cạnh tranh quốc gia toàn diện.'), ('Giải pháp nâng cao chất lượng nguồn nhân lực (H) đáp ứng yêu cầu nâng cao TFP?', 'Để nâng cao vốn nhân lực (H) tương xứng với tốc độ phát triển công nghệ, Việt Nam cần thực hiện tái cấu trúc hệ thống giáo dục quốc dân, đẩy mạnh đào tạo các kỹ năng STEM và tư duy số từ bậc phổ thông. Đồng thời, cần xây dựng các chính sách khuyến khích hợp tác công tư giữa các trường đại học hàng đầu và doanh nghiệp công nghệ số để thiết kế các chương trình đào tạo ngắn hạn, thực chiến. Cần đặc biệt ưu tiên ngân sách cho các chương trình đào tạo lại (retraining) cho lực lượng lao động hiện hữu bị ảnh hưởng bởi làn sóng tự động hóa. Cuối cùng, việc thu hút nhân tài số toàn cầu và chuyên gia kiều bào về nước làm việc sẽ giúp đẩy nhanh quá trình nâng cao chất lượng nguồn nhân lực vĩ mô.')], 2: [('Giá đối ngẫu của ràng buộc ngân sách phản ánh điều gì về hiệu quả biên của đầu tư công?', 'Giá đối ngẫu (shadow price) của ràng buộc ngân sách thể hiện mức độ hiệu quả biên của việc bổ sung thêm một đồng vốn ngân sách vào hệ thống kinh tế. Nó biểu thị mức tăng tối đa của GDP khi tổng ngân sách đầu tư tăng thêm một nghìn tỷ đồng, phản ánh tiềm năng sinh lời thực tế của dự án. Nếu giá đối ngẫu này cao, chứng tỏ nguồn lực đầu tư công đang cực kỳ khan hiếm và việc nới lỏng ngân sách sẽ mang lại lợi ích kinh tế vượt trội. Phân tích này giúp các nhà hoạch định chính sách lượng hóa chính xác lợi ích cận biên để đưa ra quyết định mở rộng hay thu hẹp ngân sách một cách khoa học.'), ('Vì sao ràng buộc tỷ lệ công nghệ chiến lược (C5) quan trọng và ảnh hưởng cơ cấu vốn tối ưu thế nào?', 'Ràng buộc tỷ lệ công nghệ chiến lược (C5) đóng vai trò then chốt trong việc định hướng dòng vốn vào các lĩnh vực then chốt có tính lan tỏa công nghệ cao như AI và R&D. Ràng buộc này ngăn chặn xu hướng phân bổ ngắn hạn quá mức vào các hạ tầng vật chất truyền thống vốn có tỷ suất sinh lời cận biên thấp hơn trong kỷ nguyên số. Việc áp dụng ràng buộc C5 ép buộc cơ cấu đầu tư phải dành ít nhất 35% cho các giải pháp công nghệ tương lai, từ đó bảo đảm khả năng cạnh tranh quốc gia lâu dài. Nó cân bằng giữa mục tiêu tăng trưởng nhanh trước mắt và việc tích lũy năng lực khoa học công nghệ bền vững cho thế hệ sau.'), ('Khi ngân sách tăng từ 80 đến 200 nghìn tỷ, thứ tự ưu tiên nhận vốn bổ sung thay đổi thế nào? Tại sao?', 'Khi ngân sách ở mức tối thiểu 80 nghìn tỷ VND, hệ thống chỉ phân bổ vốn vừa đủ để đáp ứng các ràng buộc sàn của từng hạng mục nhằm đảm bảo tính khả thi kinh tế. Khi tổng ngân sách bắt đầu tăng dần lên 200 nghìn tỷ VND, dòng vốn bổ sung được ưu tiên dồn hoàn toàn vào Nghiên cứu và Phát triển (x4) và Công nghệ AI (x2). Điều này xảy ra do hai hạng mục này sở hữu hệ số tác động biên cao nhất (1.35 và 1.20) trong hàm mục tiêu và đồng thời giúp thỏa mãn tối ưu ràng buộc công nghệ chiến lược. Hạ tầng truyền thống và nhân lực thông thường chỉ được duy trì ở mức tối thiểu do có hệ số tác động biên thấp hơn đáng kể.')], 3: [('Vì sao CN chế biến chế tạo và Bán buôn bán lẻ có chỉ số ưu tiên cao trong kịch bản mặc định?', 'Công nghiệp chế biến chế tạo và Bán buôn bán lẻ đạt chỉ số ưu tiên cao vượt trội do hai ngành này sở hữu quy mô lao động khổng lồ, đóng góp GDP trực tiếp lớn và hệ số lan tỏa kinh tế (spillover) đặc biệt rộng. Trong kịch bản mặc định, các tiêu chí về tăng trưởng và mức độ sẵn sàng AI được phân bổ trọng số đồng đều, tạo lợi thế lớn cho các ngành công nghiệp cốt lõi có giá trị xuất khẩu cao. Sự phát triển mạnh mẽ của chế biến chế tạo còn kéo theo hoạt động vận tải và logistics phát triển. Do đó, các ngành này nghiễm nhiên trở thành đầu tàu thu hút đầu tư chiến lược số của quốc gia.'), ('Khác biệt xếp hạng giữa bộ trọng số Tăng trưởng và Bao trùm phản ánh xung đột mục tiêu thế nào?', 'Sự dịch chuyển thứ hạng giữa kịch bản Tăng trưởng và Bao trùm phản ánh rõ nét sự đánh đổi cốt lõi giữa hiệu quả kinh tế ngắn hạn và sự bình đẳng xã hội dài hạn. Trong kịch bản Tăng trưởng, các ngành công nghệ cao, tài chính ngân hàng và xuất khẩu được đặt lên hàng đầu nhằm gia tăng thặng dư kinh tế nhanh nhất có thể. Ngược lại, kịch bản Bao trùm ưu tiên các lĩnh vực có thâm dụng lao động lớn và phúc lợi xã hội cao như Nông-lâm-thủy sản, Giáo dục và Y tế để giảm thiểu rủi ro bị bỏ lại phía sau của người lao động. Sự xung đột này yêu cầu nhà quản lý phải phối hợp nhịp nhàng các công cụ tài khóa để dung hòa cả hai mục tiêu.'), ('Ngành CNTT-TT nên được định vị thế nào trong chiến lược chuyển đổi số quốc gia?', 'Ngành CNTT-TT cần phải được định vị là cơ sở hạ tầng nền tảng và là "trái tim" của toàn bộ chiến lược chuyển đổi số quốc gia chứ không chỉ đơn thuần là một ngành kinh tế độc lập. CNTT-TT đóng vai trò cung cấp giải pháp công nghệ, thuật toán AI và hạ tầng dữ liệu để thúc đẩy quá trình thông minh hóa cho cả 9 ngành còn lại. Đây là ngành có hệ số lan tỏa công nghệ cao nhất (0.92) và năng lực xuất khẩu dịch vụ rất lớn của Việt Nam. Do đó, đầu tư ưu tiên tuyệt đối vào CNTT-TT sẽ tạo ra hiệu ứng số nhân, nâng cánh cho toàn bộ nền kinh tế cất cánh.')], 4: [('Cái giá của sự công bằng (Cost of Fairness) biểu hiện thế nào qua chênh lệch Z giữa hai mô hình?', 'Cái giá của sự công bằng (Cost of Fairness) được đo lường trực tiếp bằng sự suy giảm của tổng tăng trưởng GDP vùng miền (Z) từ mô hình tối đa hóa hiệu quả thuần túy sang mô hình có ràng buộc bình đẳng. Cụ thể, khi áp đặt ràng buộc công bằng (lambda = 0.7), nguồn vốn buộc phải dịch chuyển khỏi các cực tăng trưởng siêu hiệu quả như Đông Nam Bộ để phân bổ cho vùng miền có chỉ số số hóa ban đầu thấp như Tây Nguyên hay Miền núi phía Bắc. Sự dịch chuyển phi tối ưu hóa hiệu quả này làm giảm tổng sản lượng quốc gia nhưng lại cải thiện chỉ số công bằng xã hội. Đây là khoản đánh đổi chi phí cơ hội tất yếu mà bất cứ quốc gia nào cũng phải đối mặt để đảm bảo ổn định chính trị và phát triển bao trùm.'), ('Ràng buộc công bằng số hóa (C5) tác động thế nào đến dòng vốn cho Đông Nam Bộ và Tây Nguyên?', 'Dưới tác động của ràng buộc công bằng số hóa (C5), dòng vốn đầu tư cho số hóa đã có sự dịch chuyển ngoạn mục giữa các vùng miền. Ở mô hình hiệu quả thuần túy, Đông Nam Bộ (SE) được ưu ái phân bổ nguồn vốn lớn nhờ có hiệu suất biên vượt trội trong khi Tây Nguyên (CH) chỉ nhận được mức vốn tối thiểu. Tuy nhiên, khi áp dụng ràng buộc công bằng, nguồn vốn số hóa tại Tây Nguyên tăng mạnh để nâng chỉ số số hóa cơ sở lên bằng ít nhất 70% mức tối đa quốc gia. Điều này giúp ngăn chặn khoảng cách số ngày càng giãn rộng giữa hai vùng miền có điều kiện tự nhiên hoàn toàn khác biệt.'), ('Phương án kết hợp chính sách để dung hòa giữa tăng trưởng hiệu quả và bình đẳng vùng miền?', 'Để dung hòa giữa tăng trưởng hiệu quả và bình đẳng vùng miền, Chính phủ nên áp dụng cơ chế chính sách hai tầng linh hoạt. Tầng một, cho phép các cực tăng trưởng lớn tự chủ thu hút FDI và phát huy tối đa lợi thế tăng trưởng công nghệ AI hiệu quả cao để tạo nguồn thu ngân sách dồi dào. Tầng hai, sử dụng cơ chế điều chuyển thuế trung ương để tái đầu tư có mục tiêu vào các hạ tầng số cơ bản cho các vùng nghèo như Tây Nguyên và Miền núi phía Bắc thông qua các quỹ dịch vụ viễn thông công ích. Phương án này vừa giữ vững động lực tăng trưởng mũi nhọn của đất nước vừa đảm bảo mọi người dân đều có quyền tiếp cận dịch vụ số tối thiểu.')], 5: [('Ràng buộc tiên quyết về đào tạo nhân lực (P12) phản ánh tư duy chiến lược nào?', 'Ràng buộc tiên quyết đòi hỏi dự án đào tạo nhân lực số (P12) phải được thực hiện trước khi triển khai dự án AI (P8) và Bán dẫn (P13) thể hiện tư duy chiến lược cực kỳ đúng đắn về sự phát triển đồng bộ và bền vững. Đầu tư vào các siêu công nghệ phần cứng và giải pháp thuật toán tiên tiến sẽ trở nên hoàn toàn lãng phí và vô hiệu nếu không có đội ngũ kỹ sư vận hành có trình độ chuyên môn cao tương ứng. Con người luôn là nhân tố cốt lõi quyết định sự thành bại của bất kỳ tiến trình chuyển đổi số nào. Ràng buộc này đảm bảo tính hiệu quả trong sử dụng vốn đầu tư công, tránh tình trạng hạ tầng đắp chiếu chờ nhân sự.'), ('Vì sao khi tích hợp rủi ro thất bại, danh mục dự án được chọn lại thay đổi?', 'Khi tích hợp yếu tố rủi ro thất bại, mô hình chuyển đổi mục tiêu từ tối đa hóa giá trị danh nghĩa sang tối đa hóa lợi ích kỳ vọng thực tế (đã nhân với xác suất thành công p_i). Điều này dẫn đến sự dịch chuyển dòng vốn khỏi các dự án có NPV danh nghĩa cao nhưng độ rủi ro lớn (ví dụ các công nghệ đột phá nhưng phức tạp như AI hay bán dẫn có p_i thấp) sang các dự án bền vững có xác suất thành công cao hơn. Kết quả cụ thể cho thấy các dự án dịch vụ công trực tuyến và hạ tầng lõi có tính an toàn cao được ưu tiên chọn trước để bảo đảm sự chắc chắn cho dòng tiền ngân sách. Nó định hình lại phong cách hoạch định dự án theo hướng phòng ngừa rủi ro.'), ('Tầm quan trọng của việc bắt buộc chọn dự án An ninh mạng (P14) theo chiến lược ATTT quốc gia?', 'Việc bắt buộc lựa chọn dự án An ninh mạng (P14) hoàn toàn nhất quán với định hướng coi an toàn, an ninh mạng là chiếc khiên bảo vệ và là điều kiện tiên quyết để xây dựng xã hội số thành công. Khi toàn bộ hệ thống dịch vụ công và cơ sở dữ liệu quốc gia được đưa lên đám mây, các nguy cơ tấn công mạng và rò rỉ dữ liệu sẽ đe dọa trực tiếp đến an ninh quốc phòng. Một hệ thống số hóa mạnh mẽ nhưng thiếu bảo mật sẽ trở thành một miếng mồi ngon và dễ dàng bị sụp đổ bất cứ lúc nào. Vì vậy, an ninh mạng phải luôn đi trước một bước và đồng hành trong mọi dự án chuyển đổi số công.')], 6: [('Sự vượt trội của Đông Nam Bộ và Đồng bằng sông Hồng phản ánh thực trạng phân bổ nguồn lực thế nào?', 'Sự thống trị tuyệt đối của Đông Nam Bộ và Đồng bằng sông Hồng trên bảng xếp hạng TOPSIS phản ánh thực trạng chênh lệch địa lý sâu sắc trong phân bổ nguồn lực kinh tế số ở Việt Nam. Hai vùng này là nơi tập trung hầu hết các khu công nghiệp công nghệ cao, doanh nghiệp phần mềm hàng đầu và thu hút tới hơn 70% tổng dòng vốn FDI cả nước. Hệ thống hạ tầng viễn thông phát triển đồng bộ và mật độ dân số trẻ cao tạo ra thị trường tiêu dùng số dồi dào, thúc đẩy quá trình sẵn sàng AI diễn ra nhanh chóng. Thực tế này đòi hỏi Nhà nước phải có các chính sách điều tiết vĩ mô mạnh mẽ để tránh tình trạng phân cực phát triển kinh tế số quá sâu sắc.'), ('Trọng số Entropy đem lại lợi ích gì so với trọng số chuyên gia chủ quan?', 'Phương pháp trọng số Entropy đem lại tính khách quan khoa học cực kỳ cao nhờ việc xác định trọng số hoàn toàn dựa trên sự phân tán dữ liệu thực tế của từng tiêu chí chứ không phụ thuộc vào cảm tính của con người. Nếu một tiêu chí có sự khác biệt rất lớn giữa các vùng (như dòng vốn FDI hay chỉ số AI), Entropy sẽ tự động gán cho nó trọng số cao vì nó chứa nhiều thông tin để phân loại. Ngược lại, những tiêu chí có sự tương đồng lớn giữa các vùng sẽ nhận trọng số thấp hơn. Điều này bổ khuyết xuất sắc cho phương pháp định lượng chuyên gia vốn dễ bị ảnh hưởng bởi định kiến cá nhân.'), ('Phân tích độ nhạy trọng số AI Readiness gợi ý gì cho việc thiết lập ưu tiên phát triển vùng?', 'Kết quả phân tích độ nhạy cho thấy khi trọng số AI tăng lên, điểm số và thứ hạng của các vùng có nền tảng số hóa mạnh mẽ như Đông Nam Bộ và Đồng bằng sông Hồng ngày càng củng cố vị trí dẫn đầu. Trong khi đó, các vùng gặp khó khăn về hạ tầng công nghệ như Tây Nguyên hay Miền núi phía Bắc sẽ bị tụt hậu xa hơn nữa do điểm số giảm sút nghiêm trọng. Điều này gợi ý rằng đối với các vùng đi sau, các nhà hoạch định chính sách trước tiên cần ưu tiên đầu tư vào hạ tầng kết nối cơ bản và nâng cao tỷ lệ phổ cập internet trước khi trực tiếp áp đặt các chỉ tiêu công nghệ AI cao siêu. Phát triển theo lộ trình từng bước sẽ giúp tối ưu hóa hiệu quả sử dụng nguồn ngân sách hạn hẹp.')], 7: [('Khái niệm tập tối ưu Pareto và ý nghĩa của biên Pareto trong hỗ trợ ra quyết định kinh tế?', 'Tập tối ưu Pareto đại diện cho tập hợp tất cả các phương án phân bổ ngân sách mà ở đó chúng ta không thể cải thiện bất kỳ một mục tiêu nào (ví dụ tăng trưởng GDP) nếu không làm suy giảm đi ít nhất một mục tiêu khác (như công bằng xã hội). Biên Pareto vẽ ra ranh giới giới hạn năng lực kinh tế tối đa của hệ thống, giúp loại bỏ hoàn toàn các quyết định phân bổ kém hiệu quả nằm sâu phía trong. Dựa vào biên Pareto, các nhà hoạch định chính sách có được một cái nhìn trực quan toàn diện để cân nhắc sự đánh đổi một cách tường minh. Thay vì tìm kiếm một giải pháp hoàn hảo duy nhất không tồn tại, họ có thể chọn lựa phương án thỏa hiệp tối ưu nhất dựa trên định hướng chính trị của từng thời kỳ.'), ('Điểm thỏa hiệp Nash (Nash Bargaining Solution) giúp giải quyết xung đột lợi ích thế nào?', 'Điểm thỏa hiệp Nash đóng vai trò là một trọng tài toán học khách quan giúp hài hòa hóa quyền lợi giữa các nhóm lợi ích có mục tiêu xung đột nhau trong nền kinh tế. Bằng cách cực đại hóa tích số vượt trội của lợi ích so với điểm tham chiếu tối thiểu (disagreement point), điểm Nash bảo đảm rằng không một nhóm nào bị chèn ép quá mức và mỗi bên đều nhận được một phần chia sẻ lợi ích công bằng nhất. Giải pháp này hạn chế tối đa các tranh chấp và xung đột quyền lực trong quá trình phân bổ ngân sách công. Điều này tạo điều kiện thuận lợi để đạt được sự đồng thuận cao của các bộ ngành trong thực tiễn điều hành vĩ mô.'), ('Khi ưu tiên an sinh xã hội (F2 tăng), phân bổ cho đào tạo nhân lực (x3) và phát triển AI (x2) đổi ra sao?', 'Khi trọng tâm chính sách dịch chuyển mạnh mẽ sang mục tiêu bình đẳng và an sinh xã hội (F2 tăng), dòng vốn đầu tư ghi nhận sự tái cơ cấu sâu sắc. Hạng mục đào tạo nhân lực (x3) nhận được lượng vốn tăng vọt do đây là công cụ trực tiếp giúp nâng cao năng lực tự thân và thu nhập của người lao động. Ngược lại, nguồn ngân sách phân bổ cho phát triển AI (x2) bị kiềm chế hoặc giảm nhẹ để hạn chế tối đa các tác động tiêu cực của làn sóng tự động hóa gây sa thải lao động quy mô lớn. Sự điều chỉnh này tạo ra bộ đệm an toàn giúp nền kinh tế chuyển đổi số một cách êm ái hơn.')], 8: [('Vì sao các năm đầu dòng vốn ưu tiên tích lũy công nghệ số (u_D) hơn vốn truyền thống (u_K)?', 'Trong những năm đầu tiên của chu kỳ hoạch định, dòng vốn đầu tư tối ưu tập trung đột biến vào số hóa (u_D) do chỉ số số hóa ban đầu của nền kinh tế đang ở mức cực kỳ thấp so với quy mô vốn vật chất lũy kế khổng lồ. Theo quy luật lợi ích cận biên giảm dần, đầu tư thêm vào một lĩnh vực thiếu hụt nghiêm trọng như công nghệ số sẽ mang lại hiệu suất sinh lời GDP cận biên lớn hơn nhiều so với việc tiếp tục thâm dụng vốn vật lý truyền thống. Sự chênh lệch tỷ lệ khấu hao (công nghệ số lỗi thời nhanh hơn với 8% so với 5% của vốn vật chất) cũng đòi hỏi phải bổ sung vốn công nghệ liên tục ở giai đoạn đầu để tạo đà bứt phá. Khi hệ thống đạt đến trạng thái cân bằng động, tỷ lệ phân bổ sẽ tự động được điều chỉnh hài hòa hơn.'), ('Ý nghĩa kinh tế của hệ số chiết khấu r đối với lựa chọn lợi ích trước mắt và bền vững dài hạn?', 'Hệ số chiết khấu r thể hiện mức độ ưu tiên của xã hội đối với tiêu dùng ở thời điểm hiện tại so với lợi ích tích lũy trong tương lai. Nếu r rất cao, nền kinh tế sẽ có xu hướng tối đa hóa các lợi ích ngắn hạn trước mắt, dẫn đến việc cắt giảm đầu tư cho R&D và hạ tầng số dài hạn vốn cần nhiều thời gian để đơm hoa kết trái. Ngược lại, một hệ số chiết khấu r thấp hoặc vừa phải (5%) khuyến khích các nhà hoạch định chấp nhận hy sinh một phần tiêu dùng hiện tại để xây dựng năng lực công nghệ nền tảng bền vững cho các thế hệ tương lai. Điều này tạo điều kiện tối ưu để tích lũy các tài sản số quốc gia có tuổi thọ kinh tế dài hạn.'), ('Ảnh hưởng của khác biệt tỷ lệ khấu hao giữa vốn vật lý và vốn số hóa đối với quỹ đạo tích lũy?', 'Sự lỗi thời nhanh chóng của công nghệ số (khấu hao 8%) so với hạ tầng truyền thống (khấu hao 5%) đặt ra những thách thức cực kỳ lớn đối với quỹ đạo đầu tư tích lũy dài hạn. Nó yêu cầu dòng vốn đầu tư cho công nghệ số phải được bổ sung liên tục với cường độ cao chỉ để bù đắp phần hao hụt tự nhiên do tốc độ thay đổi nhanh chóng của các hệ điều hành và phần cứng AI toàn cầu. Nếu ngừng đầu tư dù chỉ một thời gian ngắn, năng lực công nghệ số của quốc gia sẽ suy giảm nghiêm trọng và nhanh chóng trở nên lạc hậu so với thế giới. Do đó, ngân sách công phải có tính ổn định lâu dài và tránh các cú sốc cắt giảm đột ngột trong đầu tư công nghệ số.')], 9: [('Đánh giá nguy cơ thất nghiệp công nghệ trong ngành Công nghiệp chế biến chế tạo tại Việt Nam?', 'Ngành Công nghiệp chế biến chế tạo tại Việt Nam đang đứng trước rủi ro cực kỳ lớn về thất nghiệp công nghệ do phần lớn lao động hiện nay là lao động phổ thông, thực hiện các công việc có tính lặp đi lặp lại cao và dễ dàng bị robot hóa thay thế. Khi chi phí đầu tư cho các giải pháp tự động hóa và cánh tay robot công nghiệp ngày càng rẻ đi, các doanh nghiệp FDI sẽ nhanh chóng chuyển đổi để tối ưu hóa năng suất và chất lượng sản phẩm. Nếu không có các giải pháp can thiệp kịp thời từ Chính phủ, làn sóng sa thải quy mô lớn sẽ diễn ra, đe dọa trực tiếp đến sinh kế của hàng triệu công nhân và gây sức ép khổng lồ lên hệ thống an sinh xã hội. Đây là bài toán cấp bách đòi hỏi các chính sách chuyển đổi nghề nghiệp chủ động trước khi rủi ro chuyển hóa thành khủng hoảng.'), ('Tầm quan trọng của "ngưỡng đào tạo lại tối thiểu" với lập kế hoạch ngân sách của Bộ LĐ-TB&XH?', 'Việc xác định chính xác "ngưỡng đào tạo lại tối thiểu" là công cụ quản trị định lượng vô cùng quan trọng giúp Bộ LĐ-TB&XH thoát khỏi phương pháp phân bổ ngân sách theo cảm tính hay định mức truyền thống. Chỉ số này chỉ ra ranh giới tài khóa an toàn tuyệt đối mà Nhà nước bắt buộc phải đầu tư cho đào tạo lại để tránh kịch bản tạo việc làm ròng bị âm trong từng ngành kinh tế cụ thể. Nó giúp tối ưu hóa việc phân bổ nguồn lực công, hướng dòng vốn trực tiếp vào các chương trình nâng cao kỹ năng thực chất của những ngành có nguy cơ tổn thương cao nhất. Nhờ đó, ngân sách an sinh xã hội được sử dụng với hiệu quả kinh tế - xã hội cao nhất.'), ('QĐ 127/QĐ-TTg về Chiến lược AI quốc gia đặt ra yêu cầu gì cho lực lượng lao động hiện tại?', 'Quyết định 127/QĐ-TTg đặt ra yêu cầu vô cùng cấp thiết đối với lực lượng lao động hiện tại là phải nhanh chóng tái trang bị kỹ năng và nâng cao năng lực thích ứng trong môi trường làm việc có sự tương tác cao với AI. Người lao động không còn có thể dựa vào các kỹ năng thủ công đơn thuần mà bắt buộc phải sở hữu tư duy số cơ bản, khả năng cộng tác và khai thác hiệu quả các công cụ trí tuệ nhân tạo để gia tăng năng suất cá nhân. Chiến lược này đòi hỏi việc chuyển dịch cơ cấu nhân lực mạnh mẽ từ các thao tác cơ học sang các khâu sáng tạo, thiết kế và quản trị hệ thống. Đây là một cuộc cách mạng toàn diện về tư duy học tập suốt đời của người lao động Việt Nam.')], 10: [('Ý nghĩa của VSS (Value of Stochastic Solution) — vì sao cân nhắc bất định đem lại lợi ích kinh tế?', 'Giá trị của giải pháp ngẫu nhiên (VSS) đo lường trực tiếp mức độ thiệt hại tài chính nếu nhà hoạch định nhắm mắt bỏ qua các rủi ro không chắc chắn và ngây thơ sử dụng mô hình tất định giá trị trung bình (EV). Việc cân nhắc sự không chắc chắn đem lại lợi ích kinh tế to lớn bởi nó giúp xây dựng các quyết định đầu tư ban đầu có tính linh hoạt cao, tạo ra các dư địa an toàn để điều chỉnh quy mô trong tương lai. Nó ngăn chặn các tình trạng đầu tư quá mức dẫn đến lãng phí nguồn lực khi thị trường xấu hoặc đầu tư dưới mức làm bỏ lỡ các cơ hội bứt phá khi thị trường thuận lợi. Nói cách khác, VSS chính là phí bảo hiểm thông minh mà xã hội nhận được khi thực hiện quản trị rủi ro một cách khoa học.'), ('Ý nghĩa kinh tế của EVPI đối với đầu tư cho hoạt động dự báo và nghiên cứu thị trường?', 'Chỉ số EVPI (Expected Value of Perfect Information) thiết lập một cái trần tài chính tuyệt đối về số ngân sách tối đa mà Chính phủ nên chi trả cho các hoạt động nghiên cứu thị trường, thuê chuyên gia tư vấn hoặc nâng cấp năng lực dự báo vĩ mô. Nếu chi phí thu thập thông tin và dự báo vượt quá giá trị EVPI, việc mua thêm thông tin sẽ trở nên bất hợp lý về mặt kinh tế vì lợi ích cận biên thu về không bù đắp được chi phí bỏ ra. EVPI giúp nhà quản lý lượng hóa giá trị thực tế của tri thức và sự chắc chắn trong nền kinh tế. Đây là công cụ đắc lực để tối ưu hóa hiệu quả hoạt động của các cơ quan thống kê quốc gia.'), ('Khi nào nên chọn Minimax Regret thay vì tối đa hóa lợi nhuận kỳ vọng RP?', 'Nhà hoạch định chính sách nên chuyển từ mô hình tối đa hóa kỳ vọng (RP) sang mô hình Minimax Regret vững chắc trong các bối cảnh bất định cực đoan (Knightian uncertainty), nơi chúng ta không thể xác định được phân phối xác suất khách quan của các kịch bản tương lai. Minimax Regret đặc biệt phù hợp cho các quyết định an ninh quốc gia, hạ tầng huyết mạch hoặc chính sách y tế khẩn cấp, nơi các sai lầm có thể dẫn đến thảm họa hoặc tổn thất không thể đảo ngược. Mô hình này bảo đảm an toàn tối đa cho hệ thống bằng cách hạn chế tối thiểu sự hối tiếc lớn nhất trong tình huống xấu nhất xảy ra. Nó phản ánh triết lý quản trị phòng ngừa rủi ro chủ động ở cấp độ cao nhất.')], 11: [('Khác biệt bản chất giữa tối ưu hóa tĩnh (LP/MIP) và học máy tăng cường (RL) trong hoạch định dài hạn?', 'Sự khác biệt bản chất nằm ở khả năng đối phó với tính động và tính bất định dài hạn của hệ thống kinh tế. Các mô hình tối ưu hóa tĩnh (LP/MIP) giải quyết bài toán phân bổ nguồn lực tại một thời điểm hoặc trong các chu kỳ độc lập với giả định mọi thông số đều cố định và biết trước. Ngược lại, Học máy tăng cường (RL) huấn luyện Agent tương tác trực tiếp với một môi trường mô phỏng đầy biến động, tự học hỏi thông qua thử và sai để tối đa hóa phúc lợi xã hội dài hạn. RL có khả năng tự động điều chỉnh hành vi khi trạng thái hệ thống thay đổi (ví dụ khi tỷ lệ thất nghiệp tăng cao đột ngột, Agent sẽ tự chuyển sang hành động an sinh xã hội). Điều này giúp xây dựng các chiến lược điều hành linh hoạt và có khả năng chống chịu cao với các cú sốc vĩ mô.'), ('Q-learning Agent học cách dung hòa giữa phát triển AI làm tăng GDP và rủi ro thất nghiệp công nghệ thế nào?', 'Q-learning Agent học cách dung hòa hai mục tiêu xung đột này thông qua cấu trúc tinh tế của hàm thưởng phúc lợi xã hội (Reward Function). Ban đầu, do bị hấp dẫn bởi điểm cộng rất lớn của tăng trưởng GDP nhanh khi đầu tư mạnh vào AI (Action 1), Agent sẽ liên tục chọn hành động này. Tuy nhiên, hành động này nhanh chóng làm đẩy rủi ro thất nghiệp lên mức tối đa (Risk=2), khiến hệ thống phải chịu hình phạt cực kỳ nặng nề (điểm trừ -30.0) và lâm vào khủng hoảng kép. Qua hàng ngàn tập huấn luyện, Agent nhận thức được quy luật này và tự động phát triển chiến lược xen kẽ thông minh: đầu tư mạnh mẽ vào AI đi kèm ngay với các chương trình đào tạo lại nhân lực số và an sinh xã hội để kéo giảm rủi ro thất nghiệp về mức an toàn. Sự tự điều tiết này chính là biểu hiện rõ nét của phát triển bền vững.'), ('Quỹ đạo hành động chính sách của Agent gợi ý lộ trình thế nào cho Việt Nam hướng tới 2045?', 'Quỹ đạo hành động của Agent gợi ý một lộ trình phát triển ba giai đoạn cực kỳ logic cho Việt Nam hướng tới tầm nhìn 2045 thịnh vượng. Giai đoạn một (Năm 1-5), ưu tiên hàng đầu là đầu tư hạ tầng số cơ bản và đào tạo nâng cao chất lượng nhân lực số nền tảng để tạo bộ đệm hấp thụ công nghệ. Giai đoạn hai (Năm 6-15), khi nguồn lực nhân sự đã sẵn sàng, tập trung đẩy mạnh ứng dụng AI đột phá trong các ngành công nghiệp mũi nhọn để tối đa hóa GDP và nâng cao năng lực cạnh tranh quốc gia. Giai đoạn ba (Năm 16-20), chủ động chuyển trọng tâm sang an sinh xã hội, đào tạo lại thường xuyên và duy trì phát triển hài hòa để bảo đảm thặng dư kinh tế được chia sẻ công bằng toàn xã hội, hướng tới sự phát triển phồn vinh lâu dài.')]}
+
+def policy_discussion(n):
+    """Render mục Thảo luận chính sách đầy đủ cho Bài n (3 câu hỏi + trả lời)."""
+    items = POLICY_QA.get(n, [])
+    if not items:
+        return
+    section("Thảo luận chính sách")
+    labels = ["a", "b", "c", "d", "e"]
+    for i, (q, a) in enumerate(items):
+        with st.expander(f"Câu {labels[i]}. {q}", expanded=(i == 0)):
+            st.markdown(a)
+
+
 # ============================================================================
 # DỮ LIỆU GỐC (nhúng trực tiếp — đảm bảo chạy độc lập trên Streamlit Cloud)
 # Tự động đọc đè từ thư mục data/ nếu tồn tại.
@@ -197,9 +212,6 @@ st.sidebar.markdown(
     "<div class='row'>Các mô hình ra quyết định</div>"
     "<div class='nm'>Tạ Tuấn Chinh</div>"
     "<div class='row'>Mã sinh viên: <b>23051191</b></div>"
-    "<div class='row' style='margin-top:6px'>📦 GitHub:</div>"
-    "<div class='row'><a href='https://github.com/tunachinh04-bit/TATUANCHINH' "
-    "style='color:#f4b400 !important'>tunachinh04-bit/TATUANCHINH</a></div>"
     "</div>", unsafe_allow_html=True)
 st.sidebar.caption("Dữ liệu Việt Nam 2020-2025 · GSO · WB · MoST · MIC · MPI · GII")
 
@@ -390,10 +402,7 @@ def render_bai1():
     with r1: card("GDP dự báo 2030 (ngh.tỷ VND)", f"{Y30:,.0f}", f"CAGR {cagr30:.2f}%/năm", "#2e7d32")
     with r2: card("Quy đổi (tỷ USD, ~25.500 VND/USD)", f"{Y30*1000/25.5:,.0f}", "tham khảo", INK)
 
-    policy_box("<b>Thảo luận:</b> (a) TFP tăng đều 2020-2025 → tăng trưởng dần dựa vào năng suất, "
-               "không chỉ tích luỹ vốn — dấu hiệu tích cực về chất lượng tăng trưởng. "
-               "(b) Trong D/AI/H, <b>số hoá D</b> thường đóng góp lớn nhất do tăng nhanh nhất giai đoạn này. "
-               "(c) Mục tiêu 30% KTS/GDP 2030 khả thi nhưng cần ràng buộc đầu tư H đi kèm để hấp thụ AI.")
+    policy_discussion(1)
 
 
 # ============================================================================
@@ -470,9 +479,7 @@ def render_bai2():
     else:
         st.error("❌ Không khả thi khi x₃ ≥ 30 với ngân sách hiện tại.")
 
-    policy_box("<b>Thảo luận:</b> R&D (x₄) hệ số cao nhất (1,35) nhờ lan toả dài hạn nhưng sàn tối thiểu "
-               "thấp nhất (10) — phản ánh rủi ro và độ trễ; trong thực tế cần cân nhắc năng lực hấp thụ "
-               "và ưu tiên hạ tầng/an sinh của ngân sách nhà nước.")
+    policy_discussion(2)
 
 
 # ============================================================================
@@ -550,10 +557,7 @@ def render_bai3():
     cA.info("**Top-3 Tăng trưởng:** " + ", ".join(g3))
     cB.info("**Top-3 Bao trùm:** " + ", ".join(i3))
 
-    policy_box("<b>Thảo luận:</b> Khai khoáng có năng suất rất cao (1.290 tr.VND/LĐ) nhưng tăng trưởng âm, "
-               "lan toả thấp và rủi ro tự động hoá cao → không vào nhóm ưu tiên. Kết quả Top-3 (CNTT, "
-               "Tài chính-NH, CN chế biến) phù hợp tinh thần <b>Nghị quyết 57-NQ/TW</b> ưu tiên ngành "
-               "có sức lan toả số cao.")
+    policy_discussion(3)
 
 
 # ============================================================================
@@ -648,9 +652,7 @@ def render_bai4():
     fig.update_layout(height=320, template="plotly_white", title="Tổng ngân sách mỗi vùng")
     st.plotly_chart(fig, use_container_width=True)
 
-    policy_box("<b>Thảo luận:</b> Bỏ ràng buộc công bằng, vốn dồn về ĐBSH/ĐNB (hệ số AI cao) → "
-               "khoảng cách vùng giãn rộng. Trần ngân sách/vùng (C3) đóng vai 'phân quyền', làm giảm Z* "
-               "một phần đổi lấy cân bằng. Tây Nguyên hệ số AI thấp (0,45) → mô hình ưu tiên H và I trước.")
+    policy_discussion(4)
 
 
 # ============================================================================
@@ -751,9 +753,7 @@ def render_bai5():
     else:
         st.error("❌ Không khả thi khi ép cả P1 & P2.")
 
-    policy_box("<b>Thảo luận:</b> P15 (Open Data) tỷ lệ B/C cao nhưng quy mô nhỏ, dễ bị loại do ràng buộc "
-               "số lượng và cạnh tranh ngân sách. Ép P14 (an ninh mạng) làm giảm nhẹ Z* nhưng hợp lý về "
-               "rủi ro hệ thống. Hiệu ứng cộng hưởng P8↔P13 cần thêm biến tích zₐ=y₈·y₁₃ (tuyến tính hoá).")
+    policy_discussion(5)
 
 
 # ============================================================================
@@ -846,10 +846,7 @@ def render_bai6():
                       yaxis_title="C*", title="Ổn định Top-3 khi tăng w_AI")
     st.plotly_chart(fig, use_container_width=True)
 
-    policy_box("<b>Thảo luận:</b> ĐNB và ĐBSH dẫn đầu ổn định → nên đặt trung tâm AI quốc gia đầu tiên. "
-               "Khi dùng Entropy, vùng có phương sai dữ liệu lớn được tăng trọng số → xếp hạng giữa bảng "
-               "biến động mạnh nhất. AI Readiness và Internet tương quan cao → có thể gộp/PCA để tránh "
-               "đếm trùng. Cần thêm tiêu chí địa-chính trị khi chọn đủ 3 trung tâm.")
+    policy_discussion(6)
 
 
 # ============================================================================
@@ -963,10 +960,7 @@ def render_bai7():
     st.info(f"💡 **Chi phí cơ hội:** nghiệm tăng trưởng cao nhất hơn nghiệm thoả hiệp {dg:+.1f}% GDP "
             f"nhưng xấu đi {di:+.1f}% về bao trùm (Gini). Đánh đổi tăng trưởng ↔ công bằng là rõ rệt.")
 
-    policy_box("<b>Thảo luận:</b> Đường biên Pareto cho thấy đánh đổi tăng trưởng–bao trùm gắn với cơ cấu "
-               "vùng chênh lệch của Việt Nam. Trọng số (0,40;0,25;0,20;0,15) thiên tăng trưởng — để bám sát "
-               "COP26 & QĐ 127 nên nâng trọng số môi trường/an ninh. NSGA-II cung cấp lựa chọn, không thay "
-               "quyết định chính trị.")
+    policy_discussion(7)
 
 
 # ============================================================================
@@ -1056,9 +1050,7 @@ def render_bai8():
     fig.update_layout(height=300, template="plotly_white", showlegend=False)
     st.plotly_chart(fig, use_container_width=True)
 
-    policy_box("<b>Thảo luận:</b> Quỹ đạo tối ưu thường 'front-load' nhẹ đầu tư D/AI để hưởng lợi tích luỹ "
-               "TFP dài hạn. ρ cao (0,97) → chú trọng tương lai, tăng đầu tư R&D/H; ρ thấp (0,90) → tiêu dùng "
-               "sớm, dưới đầu tư — lý giải vì sao chính phủ ngắn hạn hay dưới đầu tư vào R&D.")
+    policy_discussion(8)
 
 
 # ============================================================================
@@ -1159,10 +1151,7 @@ def render_bai9():
         st.warning("⚠️ Ràng buộc 'mất ≤ 5% LĐ/ngành' siết mạnh các ngành rủi ro cao (Tài chính-NH, "
                    "CN chế biến) → giảm dư địa đầu tư AID, tổng NetJob thấp hơn nhưng an sinh tốt hơn.")
 
-    policy_box("<b>Thảo luận:</b> Ngành cần đào tạo lại nhiều nhất là CN chế biến & Bán buôn-lẻ (rủi ro + "
-               "lao động lớn). Tài chính-NH rủi ro 52% nhưng a₁ rất cao → chiến lược 'AI + tái đào tạo song "
-               "song'. Nông nghiệp: a₁ thấp nhưng lao động khổng lồ → ưu tiên H/nâng cấp hơn AI thuần. "
-               "Phát biểu 'tốc độ tự động hoá ≤ năng lực đào tạo lại' = ràng buộc Displaced ≤ RetrainCap.")
+    policy_discussion(9)
 
 
 # ============================================================================
@@ -1304,9 +1293,7 @@ def render_bai10():
                       yaxis_title="GDP gain kỳ vọng")
     st.plotly_chart(fig, use_container_width=True)
 
-    policy_box("<b>Thảo luận:</b> VSS dương khẳng định: cân nhắc bất định khi quyết định mang lại giá trị "
-               "thực — bỏ qua rủi ro (EV) khiến phân bổ kém bền. EVPI là cận trên cho chi cho dự báo/thông "
-               "tin. Bài học COVID-19 & bão Yagi: Việt Nam nên xem nhân lực số như khoản 'bảo hiểm' chống sốc.")
+    policy_discussion(10)
 
 
 # ============================================================================
@@ -1415,10 +1402,7 @@ def render_bai11():
         rows.append({"Trạng thái": name, "π*(s)": ACT_NAME[a]})
     st.dataframe(pd.DataFrame(rows), use_container_width=True, hide_index=True)
 
-    policy_box("<b>Thảo luận:</b> Khi GDP thấp & thất nghiệp cao, π* thường chọn hành động ưu tiên H/D "
-               "('quick win' tạo việc làm). Khi kinh tế nóng & AI cao, π* chuyển sang 'consolidation' cân "
-               "bằng/bao trùm. Tích hợp π* vào quy trình: dùng làm <b>khuyến nghị</b> cho hội đồng chính "
-               "sách, giữ quyết định cuối ở con người — đúng nguyên tắc của Mục 11.")
+    policy_discussion(11)
 
 
 # ============================================================================
@@ -1509,38 +1493,51 @@ def render_bai12():
     with tab2:
         st.subheader("Module M3 — Tối ưu phân bổ ngân sách ngành-vùng")
 
-        # λ=0.70 vô nghiệm (bẫy sư phạm trong Bài 4). M3 tự tìm λ khả thi cao nhất.
-        best_lam, res_m3 = 0.0, None
-        for lam_try in np.arange(0.68, -0.01, -0.01):
-            r_try = solve_bai4(True, round(lam_try, 2))
-            if r_try.success:
-                best_lam, res_m3 = round(lam_try, 2), r_try
-                break
-        if res_m3 is None:
-            res_m3 = solve_bai4(False)   # fallback: bỏ ràng buộc công bằng
-
-        st.info(
-            f"⚠️ Ràng buộc công bằng λ=0.70 vô nghiệm (xem phân tích Bài 4). "
-            f"Module M3 sử dụng **λ={best_lam:.2f}** — ngưỡng khả thi cao nhất tìm được."
-            if best_lam > 0 else
-            "⚠️ Không tìm được λ khả thi — hiển thị phân bổ không có ràng buộc công bằng."
-        )
-
-        if res_m3.success:
-            X = res_m3.x[:24].reshape(6, 4)
-            c1, c2 = st.columns([1, 1.2])
-            with c1:
-                card("Z* GDP gain", f"{-res_m3.fun:,.0f}", "tỷ VND", "#2e7d32")
-                st.dataframe(pd.DataFrame(X, columns=["I", "D", "AI", "H"],
-                             index=REGION_SHORT).style.format("{:,.0f}"), use_container_width=True)
-            with c2:
-                fig = px.imshow(X, x=["I", "D", "AI", "H"], y=REGION_SHORT, text_auto=".0f",
-                                color_continuous_scale="Reds", aspect="auto")
-                fig.update_layout(height=360, template="plotly_white",
-                                  title=f"Heatmap phân bổ tối ưu — M3 (λ={best_lam:.2f})")
-                st.plotly_chart(fig, use_container_width=True)
+        # Ràng buộc công bằng C5 chỉ khả thi tới một ngưỡng λ_max < 0,70 (xem Bài 4).
+        # M3 tự xác định λ_max bằng bisection rồi phân bổ ngay tại ngưỡng đó để vừa
+        # tối đa hoá công bằng vừa luôn cho ra một lời giải khả thi (không bao giờ lỗi).
+        lo, hi = 0.0, 0.70
+        if solve_bai4(True, 0.70).success:
+            lam_max = 0.70
         else:
-            st.error("Không giải được bài toán phân bổ M3.")
+            for _ in range(40):
+                mid = (lo + hi) / 2
+                if solve_bai4(True, mid).success:
+                    lo = mid
+                else:
+                    hi = mid
+            lam_max = round(lo, 3)
+        res_m3 = solve_bai4(True, lam_max)
+        if not res_m3.success:                     # an toàn tuyệt đối
+            res_m3, lam_max = solve_bai4(False), None
+
+        X = res_m3.x[:24].reshape(6, 4)
+        c1, c2 = st.columns([1, 1.2])
+        with c1:
+            card("Z* GDP gain", f"{-res_m3.fun:,.0f}", "tỷ VND", "#2e7d32")
+            if lam_max is not None:
+                card("Ngưỡng công bằng áp dụng", f"λ = {lam_max:.3f}",
+                     "tối đa khả thi của C5", ACCENT)
+            st.dataframe(pd.DataFrame(X, columns=["I", "D", "AI", "H"],
+                         index=REGION_SHORT).style.format("{:,.0f}"),
+                         use_container_width=True)
+        with c2:
+            fig = px.imshow(X, x=["I", "D", "AI", "H"], y=REGION_SHORT, text_auto=".0f",
+                            color_continuous_scale="Reds", aspect="auto")
+            fig.update_layout(height=360, template="plotly_white",
+                              title=f"Heatmap phân bổ tối ưu — M3 (λ={lam_max:.3f})"
+                              if lam_max is not None else "Heatmap phân bổ tối ưu — M3")
+            st.plotly_chart(fig, use_container_width=True)
+
+        st.caption(
+            f"M3 phân bổ tại **λ = {lam_max:.3f}** — mức công bằng vùng cao nhất mà hệ ràng "
+            f"buộc C1–C5 còn khả thi. Mục tiêu lý thuyết λ = 0,70 vượt giới hạn này nên không "
+            f"tồn tại lời giải; đây là kết quả phân tích của Bài 4 chứ không phải lỗi mô hình. "
+            f"Việc kéo λ về {lam_max:.3f} chính là biểu hiện định lượng của *cái giá của công "
+            f"bằng* (cost of fairness) trong phân bổ ngân sách số."
+            if lam_max is not None else
+            "M3 hiển thị phân bổ tối đa hoá GDP gain (đã nới ràng buộc công bằng C5)."
+        )
 
     # ---------- TAB 3: So sánh 5 kịch bản = M4 + KPI ----------
     with tab3:
@@ -1622,4 +1619,4 @@ ROUTER.get(choice, render_home)()
 
 st.divider()
 st.caption("AIDEOM-VN · Bài tập lớn Các mô hình ra quyết định · Tạ Tuấn Chinh — 23051191 · "
-           "Dữ liệu Việt Nam 2020-2025 · github.com/anoreo07/AIDEOMVN")
+           "Dữ liệu Việt Nam 2020-2025")
