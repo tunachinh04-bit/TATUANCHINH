@@ -1,0 +1,38 @@
+scheme_id,scheme_name_vi,applies_to,criterion,weight,direction,note_vi
+bai03_default,Mac dinh,Bai 3,growth,0.15,benefit,Tang truong nganh (%)
+bai03_default,Mac dinh,Bai 3,productivity,0.15,benefit,Nang suat lao dong (GDP share)
+bai03_default,Mac dinh,Bai 3,spillover,0.20,benefit,He so lan toa (0-1)
+bai03_default,Mac dinh,Bai 3,export,0.15,benefit,Xuat khau (ty USD)
+bai03_default,Mac dinh,Bai 3,employment,0.10,benefit,Viec lam (trieu lao dong)
+bai03_default,Mac dinh,Bai 3,ai_readiness,0.20,benefit,Muc do san sang AI (0-100)
+bai03_default,Mac dinh,Bai 3,automation_risk,0.15,cost,Rui ro tu dong hoa - tru (%)
+bai03_growth,Dinh huong tang truong,Bai 3,growth,0.25,benefit,Uu tien tang truong cao
+bai03_growth,Dinh huong tang truong,Bai 3,productivity,0.20,benefit,Uu tien nang suat cao
+bai03_growth,Dinh huong tang truong,Bai 3,spillover,0.10,benefit,He so lan toa
+bai03_growth,Dinh huong tang truong,Bai 3,export,0.20,benefit,Uu tien xuat khau cao
+bai03_growth,Dinh huong tang truong,Bai 3,employment,0.05,benefit,Viec lam (thap hon)
+bai03_growth,Dinh huong tang truong,Bai 3,ai_readiness,0.10,benefit,Muc do san sang AI
+bai03_growth,Dinh huong tang truong,Bai 3,automation_risk,0.10,cost,Rui ro tu dong hoa - tru
+bai03_inclusive,Dinh huong bao trum,Bai 3,growth,0.10,benefit,Tang truong nganh
+bai03_inclusive,Dinh huong bao trum,Bai 3,productivity,0.10,benefit,Nang suat lao dong
+bai03_inclusive,Dinh huong bao trum,Bai 3,spillover,0.20,benefit,Uu tien lan toa xa hoi
+bai03_inclusive,Dinh huong bao trum,Bai 3,export,0.05,benefit,Xuat khau (thap hon)
+bai03_inclusive,Dinh huong bao trum,Bai 3,employment,0.25,benefit,Uu tien viec lam nhieu
+bai03_inclusive,Dinh huong bao trum,Bai 3,ai_readiness,0.10,benefit,Muc do san sang AI
+bai03_inclusive,Dinh huong bao trum,Bai 3,automation_risk,0.20,cost,Uu tien giam rui ro - tru manh
+bai06_expert,Trong so chuyen gia TOPSIS,Bai 6,grdp_per_capita,0.10,benefit,GRDP/nguoi (trieu VND)
+bai06_expert,Trong so chuyen gia TOPSIS,Bai 6,fdi,0.10,benefit,FDI dang ky (ty USD)
+bai06_expert,Trong so chuyen gia TOPSIS,Bai 6,digital_index,0.15,benefit,Chi so so hoa (0-100)
+bai06_expert,Trong so chuyen gia TOPSIS,Bai 6,ai_readiness,0.20,benefit,Muc do san sang AI (0-100)
+bai06_expert,Trong so chuyen gia TOPSIS,Bai 6,trained_labor,0.15,benefit,Lao dong qua dao tao (%)
+bai06_expert,Trong so chuyen gia TOPSIS,Bai 6,rd_intensity,0.15,benefit,Cuong do R&D / GRDP (%)
+bai06_expert,Trong so chuyen gia TOPSIS,Bai 6,internet_penetration,0.05,benefit,Do phu Internet (%)
+bai06_expert,Trong so chuyen gia TOPSIS,Bai 6,gini_coef,0.10,cost,He so Gini - cang thap cang tot
+bai07_policy,Uu tien chinh sach da muc tieu,Bai 7,growth,0.40,benefit,Tang truong GDP (f1 - toi da hoa)
+bai07_policy,Uu tien chinh sach da muc tieu,Bai 7,inclusion,0.25,benefit,Bao trum xa hoi - giam bat binh dang vung (f2)
+bai07_policy,Uu tien chinh sach da muc tieu,Bai 7,environment,0.20,benefit,Giam phat thai CO2 (f3)
+bai07_policy,Uu tien chinh sach da muc tieu,Bai 7,security,0.15,benefit,An ninh du lieu - giam rui ro rong (f4)
+bai11_reward,Trong so phan thuong Q-learning,Bai 11,delta_gdp,0.40,benefit,Tang truong GDP (thuong +)
+bai11_reward,Trong so phan thuong Q-learning,Bai 11,delta_unemploy,0.25,cost,Tang that nghiep cong nghe (phat -)
+bai11_reward,Trong so phan thuong Q-learning,Bai 11,cyber_risk,0.20,cost,Rui ro an ninh mang (phat -)
+bai11_reward,Trong so phan thuong Q-learning,Bai 11,emission,0.15,cost,Phat thai carbon (phat -)
